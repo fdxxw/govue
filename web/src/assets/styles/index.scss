@@ -1,0 +1,29 @@
+@import "include-media/dist/_include-media.scss";
+@import "variable";
+@import "base";
+@import "layout";
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  height: 0.6rem;
+  background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+/*滚动条里面小方块*/
+::-webkit-scrollbar-thumb {
+  background-color: #dedee4;
+  border-radius: 0.1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ccc;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}

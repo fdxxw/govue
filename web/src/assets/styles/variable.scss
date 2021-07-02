@@ -1,0 +1,73 @@
+$font-family: 'Hiragino Sans GB', Helvetica, 'microsoft yahei', '微软雅黑', SimSun, '宋体', Arial !default;
+$font-size: 0.12rem !default;
+$line-height: 2 !default;
+$html-background: #f3f4f5 !default;
+$--color-white: white;
+$--color-black: black;
+$--color-border: #d9d9d9;
+$color-url: #6f787e !default;
+$color-url-hover: #26bbf0 !default;
+
+$--c-basalt: #2f1f29;
+$--c-ruby: #bf3d5e;
+$--c-fire: #dc4e58;
+$--c-curacao: #f95f53;
+$--c-dreamsicle: #ff8564;
+$--c-tungsten: #ffb6a0;
+$--c-marmelade: #ffdccf;
+$--c-flan: #fff7f4;
+  /*蓝色*/
+$--c-abyss: #120653;
+$--c-sapphire: #0b3a8d;
+$--c-ocean: #066fc5;
+$--c-pool: #00a3ff;
+$--c-laser: #00c9ff;
+$--c-hydrogen: #6bdfff;
+$--c-neutrino: #bef0ff;
+$--c-yeti: #f0fcff;
+  /*紫色*/
+$--c-shadow: #2b007e;
+$--c-void: #5c10a0;
+$--c-amethyst: #8e1fc3;
+$--c-star: #be2ee4;
+$--c-comet: #ce58eb;
+$--c-potassium: #dd84f1;
+$--c-moonstone: #ebadf8;
+$--c-twilight: #fad9ff;
+
+  /*绿色*/
+$--c-gypsy: #003e34;
+$--c-emerald: #006f49;
+$--c-viridian: #009f5f;
+$--c-rainforest: #34bb55;
+$--c-honeydew: #67d74e;
+$--c-krypton: #9bf445;
+$--c-wasabi: #c6f98e;
+$--c-mint: #f3ffd6;
+
+  /*黄色*/
+$--c-oak: #3f241f;
+$--c-topaz: #e85b1c;
+$--c-tiger: #f48d38;
+$--c-pineapple: #ffb94a;
+$--c-thunder: #ffd255;
+$--c-sulfur: #ffe480;
+$--c-daisy: #fff6b8;
+$--c-banana: #fffdde;
+
+  /*Marketing Brand Colors 品牌色*/
+$--c-chartreuse: #d6f622;
+$--c-magenta: #bf2fe5;
+$--c-deeppurple: #13002d;
+$--c-galaxy: #9394ff;
+$--c-pulsar: #513cc6;
+
+$--color-success: #67C23A;
+$--color-warning: #E6A23C;
+$--color-danger: #F56C6C;
+$--color-info: #909399;
+
+$breakpoints: (
+  small: 1500px,
+  medium: 1920px
+);

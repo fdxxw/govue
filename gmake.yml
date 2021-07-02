@@ -1,0 +1,23 @@
+vars:
+  version: 0.0.1
+  path: vpnc/version
+  goversion: 1.16.4
+
+dist: |
+  @rm ./bin
+  @mkdir ./bin/windows
+  @rm ./backend/resources/web
+  @cd frontend
+  # yarn install
+  yarn build
+  @cd .
+  @mkdir ./backend/resources/web
+  @mv ./frontend/dist ./backend/resources/web
+  @cd backend
+  @var ldflags -ldflags=" -X '{{.path}}.Version={{.version}}' -X '{{.path}}.GoVersion={{.goversion}}' -X '{{.path}}.BuildTime={{.time}}' -X 'main.AutoOpen=true' -s -w"
+  @echo {{.ldflags}}
+  @env GOOS windows
+  go build {{.ldflags}} -o ../bin/windows/AcuIoT-{{.version}}.exe main.go
+  # @env GOOS linux
+  # go build {{.ldflags}} -o ../bin/AcuIoT-{{.version}} main.go
+  

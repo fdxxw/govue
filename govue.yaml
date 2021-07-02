@@ -1,0 +1,5 @@
+httplistenip: ""
+httplistenport: 9999
+ishttps: false
+logpath: /data/acuiot/logs
+storagepath: /data/acuiot

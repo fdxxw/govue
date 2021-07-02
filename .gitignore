@@ -1,0 +1,6 @@
+*.log
+back/go.sum
+back/__debug_bin
+bin/
+build/
+back/resources/web

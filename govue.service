@@ -1,0 +1,13 @@
+[Unit]
+Description=govue
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Restart=on-failure
+RestartSec=5s
+Environment="LD_LIBRARY_PATH={{.app.home}}/govue"
+ExecStart={{.app.home}}/govue/govue -config {{.app.home}}/govue/govue.yaml
+[Install]
+WantedBy=multi-user.target
